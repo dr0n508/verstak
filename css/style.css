@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900&subset=cyrillic');
 
-.wrapp {
-	width: 100vh;
-	height: 100vh;
-}
-
-
 body {
 	margin: 0px;
 	padding: 0px;
@@ -611,6 +605,8 @@ address {
 }
 .block_35 img {
 	display:block;
+	object-fit: contain !important;
+
 }
 .block_36 {
 	position:relative;
@@ -762,7 +758,7 @@ address {
 .block_50 {
 	display:none;
 	position:absolute !important;
-	/*top:auto !important;*/
+	top:auto !important;
 }
 .block_51 {
 	padding-left:20px;
@@ -1189,4 +1185,19 @@ label.error {
 	line-height:20px;
 	font-weight:400;
 	padding-bottom:20px;
+}
+
+.modal {
+	padding: 0;
+	max-width: 1000px;
+}
+
+.modal_close { display: none}
+
+.modal a.close-modal {
+	width: 35px;
+	height: 35px;
+	right: 0px;
+	top: 0px;
+	background: url(../images/background_8.png) center no-repeat;
 }

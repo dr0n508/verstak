@@ -8,7 +8,7 @@ $(function() {
 });
 })(jQuery);
 
-$(function () {
-    $('.modal').leanModal({top: "20%" , closeButton: ".modal_close" });
-});
+// $(function () {
+//     $('.modal_temp').leanModal({top: "20%" , closeButton: ".modal_close" });
+// });
 

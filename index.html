@@ -3,16 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title>Верстаки</title>
-<meta name="description" content="Описание верстаки текст блаблабла"/>
+<meta name="description" content="Верстаки и промышленная мебель"/>
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
 <meta name="format-detection" content="address=no">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<link rel="stylesheet" href="css/jquery.modal.min.css" type="text/css" media="screen" />
 <link href="css/style.css" type="text/css" rel="stylesheet">
 <link href="css/media.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
 <div class="block_1">
 	<div class="block_2">
@@ -21,7 +24,7 @@
     </div>
     <div class="block_5">
     	<div class="block_6">и промышленная мебель</div>
-        <div class="block_7"><a class="modal" href="#callback">Обратный звонок</a></div>
+        <div class="block_7"><a class="modal_temp" rel="modal:open" href="#callback">Обратный звонок</a></div>
     </div>
     <div class="block_8"><a href="#verstaki">Верстаки</a><span>/</span><a href="#shkafy-instrumentalnye">Шкафы инструментальные</a><span>/</span><a href="#tumby-stanochnye">Тумбы инструментальные</a></div>
     <div class="block_9">Промышленная мебель для вас</div>
@@ -87,8 +90,7 @@
         </div>
     </div>
 </div>
-<div class="block_50" id="slide1">
-	<div class="block_51">
+<div id="slide1" style="display: none;">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -125,10 +127,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide2">
-	<div class="block_51">
+<div id="slide2" style="display: none">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -175,10 +175,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide3">
-	<div class="block_51">
+<div style="display: none" id="slide3">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -223,10 +221,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide4">
-	<div class="block_51">
+<div style="display: none" id="slide4">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -264,10 +260,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide5">
-	<div class="block_51">
+<div style="display: none" id="slide5">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -315,8 +309,7 @@
     </div>
     </div>
 </div>
-<div class="block_50" id="slide6">
-	<div class="block_51">
+<div style="display: none" id="slide6">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -364,10 +357,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide7">
-	<div class="block_51">
+<div style="display: none" id="slide7">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -403,53 +394,52 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
 <div class="block_33">
 	<div class="block_34">
-    	<a class="modal" href="#slide1">
+    	<a class="modal_temp" rel="modal:open" href="#slide1">
         	<div class="block_35"><img src="images/slider/verstak-2m2b.jpg" alt="Слесарный верстак одно тумбовый 2М2Б " /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак <br/> одно тумбовый 2М2Б</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide2">
+        <a class="modal_temp" rel="modal:open" href="#slide2">
         	<div class="block_35"><img src="images/slider/verstak-2m2b-md.jpg" alt="Верстак слесарный двух тумбовый 2М2Б-МД" /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак <br/> двух тумбовый 2М2Б-МД </div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide3">
+        <a class="modal_temp" rel="modal:open" href="#slide3">
         	<div class="block_35"><img src="images/slider/verstak-2m2b-s2b.jpg" alt="Слесарный верстак двух тумбовый 2М2Б-С2Б" /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак<br/> двух тумбовый 2М2Б-С2Б</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide4">
+        <a class="modal_temp" rel="modal:open" href="#slide4">
         	<div class="block_35"><img src="images/slider/verstak-3msb.jpg" alt="Слесарный верстак одно тумбовый 3МСБ" /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак<br/> одно тумбовый 3МСБ </div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide5">
+        <a class="modal_temp" rel="modal:open" href="#slide5">
         	<div class="block_35"><img src="images/slider/verstak-3msb-2m2b.jpg" alt="Верстак слесарный двух тумбовый 3МСБ-2М2Б" /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак<br/> двух тумбовый 3МСБ-2М2Б</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide6">
+        <a class="modal_temp" rel="modal:open" href="#slide6">
         	<div class="block_35"><img src="images/slider/verstak-3msb-3msb.jpg" alt="Верстак слесарный двух тумбовый 3МСБ-3М2Б" /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак<br/> двух тумбовый 3МСБ-3МСБ</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide7">
+        <a class="modal_temp" rel="modal:open" href="#slide7">
         	<div class="block_35"><img src="images/slider/verstak-s2b.jpg" alt="Слесарный верстак одно тумбовый С2Б " /></div>
             <div class="block_36">
             	<div class="block_37">Слесарный верстак<br/>одно тумбовый С2Б</div>
@@ -525,8 +515,7 @@
         </div>
     </div>
 </div>
-<div class="block_50" id="slide8">
-	<div class="block_51">
+<div style="display: none" id="slide8">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -564,10 +553,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide9">
-	<div class="block_51">
+<div style="display: none" id="slide9">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -605,10 +592,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide10">
-	<div class="block_51">
+<div style="display: none" id="slide10">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -648,10 +633,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide11">
-	<div class="block_51">
+<div style="display: none" id="slide11">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -687,10 +670,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide12">
-	<div class="block_51">
+<div style="display: none" id="slide12">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -728,10 +709,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide13">
-	<div class="block_51">
+<div style="display: none" id="slide13">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -767,10 +746,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide14">
-	<div class="block_51">
+<div style="display: none" id="slide14">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -808,53 +785,52 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
 <div class="block_33">
 	<div class="block_34">
-    	<a class="modal" href="#slide8">
+    	<a class="modal_temp" rel="modal:open" href="#slide8">
         	<div class="block_35"><img src="images/items/shkaf-SHI-10-2P-5V.jpg" alt="Шкаф инструментальный ШИ-10/2П/5В" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф инструментальный<br/> ШИ-10/2П/5В</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide9">
+        <a class="modal_temp" rel="modal:open" href="#slide9">
         	<div class="block_35"><img src="images/items/shkaf-SHI-10-3P-3V.jpg" alt="Инструментальный шкаф ШИ-10/3П/3В" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф инструментальный<br/> ШИ-10/3П/3В</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide10">
+        <a class="modal_temp" rel="modal:open" href="#slide10">
         	<div class="block_35"><img src="images/items/shkaf-SHI-3P-3V-R.jpg" alt="Шкаф инструментальный ШИ-10/3П/3В-R" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф инструментальный<br/> ШИ-10/3П/3В-R</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide11">
+        <a class="modal_temp" rel="modal:open" href="#slide11">
         	<div class="block_35"><img src="images/items/shkaf-SHI-10-4P.jpg" alt="Шкаф инструментальный ШИ-10/4П" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф инструментальный <br>ШИ-10/4П</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide12">
+        <a class="modal_temp" rel="modal:open" href="#slide12">
         	<div class="block_35"><img src="images/items/shkaf-SHI-20-2P-2V.jpg" alt="Шкаф инструментальный ШИ-20/2П/2В" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф инструментальный <br>ШИ-20/2П/2</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide13">
+        <a class="modal_temp" rel="modal:open" href="#slide13">
         	<div class="block_35"><img src="images/items/shkaf-YASHM-14-1.jpg" alt="Шкаф метизный ЯШМ 14/1" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф метизный <br>ЯШМ 14/1</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide14">
+        <a class="modal_temp" rel="modal:open" href="#slide14">
         	<div class="block_35"><img src="images/items/shkaf-YASHM-14-2.jpg" alt="Шкаф метизный ЯШМ 14/2" /></div>
             <div class="block_36">
             	<div class="block_37">Шкаф метизный <br>ЯШМ 14/2</div>
@@ -930,8 +906,7 @@
         </div>
     </div>
 </div>
-<div class="block_50" id="slide15">
-	<div class="block_51">
+<div style="display: none" id="slide15">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -965,10 +940,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide16">
-	<div class="block_51">
+<div style="display: none" id="slide16">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -1004,10 +977,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide17">
-	<div class="block_51">
+<div style="display: none" id="slide17">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -1044,10 +1015,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide18">
-	<div class="block_51">
+<div style="display: none" id="slide18">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -1085,10 +1054,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide19">
-	<div class="block_51">
+<div style="display: none" id="slide19">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -1124,10 +1091,8 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide20">
-	<div class="block_51">
+<div style="display: none" id="slide20">
 	<div class="block_39">
     	<div class="block_40">
         	<div class="block_41">
@@ -1163,44 +1128,41 @@
             </div>
         </div>
     </div>
-    </div>
 </div>
-<div class="block_50" id="slide21">
-    <div class="block_51">
-        <div class="block_39">
-            <div class="block_40">
-                <div class="block_41">
-                    <div class="block_42"><img src="images/items/Tumba-TU-1-3MSB.jpg" alt="Тумба инструментальная ТУ-1 3МСБ" /></div>
-                    <div class="block_43">
-                        <p>Тумба инструментальная ТУ-1-3МСБ комплектуется следующим образом:</p>
-                        <p>М - малый ящик (h 81 мм) – 3 ящика</p>
-                        <p>С - средний ящик (h 164 мм) – 1 ящик</p>
-                        <p>Б - большой ящик (h 248 мм) – 1 ящик</p>
+<div style="display: none" id="slide21">
+    <div class="block_39">
+        <div class="block_40">
+            <div class="block_41">
+                <div class="block_42"><img src="images/items/Tumba-TU-1-3MSB.jpg" alt="Тумба инструментальная ТУ-1 3МСБ" /></div>
+                <div class="block_43">
+                    <p>Тумба инструментальная ТУ-1-3МСБ комплектуется следующим образом:</p>
+                    <p>М - малый ящик (h 81 мм) – 3 ящика</p>
+                    <p>С - средний ящик (h 164 мм) – 1 ящик</p>
+                    <p>Б - большой ящик (h 248 мм) – 1 ящик</p>
+                </div>
+            </div>
+            <div class="block_44">
+                <div class="block_49">
+                    <div class="block_45">
+                        <div class="modal_close"></div>
+                    </div>
+                    <div class="block_46">Тумба инструментальная ТУ-1 3МСБ</div>
+                    <div class="block_52">
+                        <div class="block_42"><img src="images/items/Tumba-TU-1-3MSB.jpg" alt="Тумба инструментальная ТУ-1 3МСБ" /></div>
+                        <div class="block_43">
+                            <p>Тумба инструментальная ТУ-1-3МСБ комплектуется следующим образом:</p>
+                            <p>М - малый ящик (h 81 мм) – 3 ящика</p>
+                            <p>С - средний ящик (h 164 мм) – 1 ящик</p>
+                            <p>Б - большой ящик (h 248 мм) – 1 ящик</p>
+                        </div>
+                    </div>
+                    <div class="block_47">
+                        <p>Тумба инструментальная ТУ-1 3МСБ станет незаменимым помощником как в мастерской, так и в рабочем цеху любого предприятия. Отличительная черта данной серии тумб, это их оптимальные габаритные размеры 740 х 440 х 900(Н) и надежные телескопические направляющие, выдвигающиеся на 100%.  Так же, серия инструментальных тумб ТУ-1 оснащены перфорацией на боковых стенках, что позволяет крепить к тумбе разнообразные опции. Отметим, что тумбы серии ТУ-1 имеют надежные колеса диаметром 125 мм и верхний лоток из ABS пластика для мелких деталей и метизов. Нагрузка на ящик – 40 кг.</p>
+                        <p>Инструментальные тумбы (тележки) могут комплектоваться различным количеством ящиков и другими опциями. Но есть и общие параметры. Все тумбы укомплектованы четырьмя колесами, два из которых поворотные, одно имеет стопор. Верхняя часть тумб выполнена в виде лотка (бортик по периметру) и укомплектованы пластиковой крышкой с ячейками. Закрытие всех ящиков одним замком. В нашем ассортименте вы найдете более двух десятков стандартных позиций инструментальных тележек, а также опции к ним. Наши менеджеры помогут вам с выбором и ознакомят с тонкостями.</p>
                     </div>
                 </div>
-                <div class="block_44">
-                    <div class="block_49">
-                        <div class="block_45">
-                            <div class="modal_close"></div>
-                        </div>
-                        <div class="block_46">Тумба инструментальная ТУ-1 3МСБ</div>
-                        <div class="block_52">
-                            <div class="block_42"><img src="images/items/Tumba-TU-1-3MSB.jpg" alt="Тумба инструментальная ТУ-1 3МСБ" /></div>
-                            <div class="block_43">
-                                <p>Тумба инструментальная ТУ-1-3МСБ комплектуется следующим образом:</p>
-                                <p>М - малый ящик (h 81 мм) – 3 ящика</p>
-                                <p>С - средний ящик (h 164 мм) – 1 ящик</p>
-                                <p>Б - большой ящик (h 248 мм) – 1 ящик</p>
-                            </div>
-                        </div>
-                        <div class="block_47">
-                            <p>Тумба инструментальная ТУ-1 3МСБ станет незаменимым помощником как в мастерской, так и в рабочем цеху любого предприятия. Отличительная черта данной серии тумб, это их оптимальные габаритные размеры 740 х 440 х 900(Н) и надежные телескопические направляющие, выдвигающиеся на 100%.  Так же, серия инструментальных тумб ТУ-1 оснащены перфорацией на боковых стенках, что позволяет крепить к тумбе разнообразные опции. Отметим, что тумбы серии ТУ-1 имеют надежные колеса диаметром 125 мм и верхний лоток из ABS пластика для мелких деталей и метизов. Нагрузка на ящик – 40 кг.</p>
-                            <p>Инструментальные тумбы (тележки) могут комплектоваться различным количеством ящиков и другими опциями. Но есть и общие параметры. Все тумбы укомплектованы четырьмя колесами, два из которых поворотные, одно имеет стопор. Верхняя часть тумб выполнена в виде лотка (бортик по периметру) и укомплектованы пластиковой крышкой с ячейками. Закрытие всех ящиков одним замком. В нашем ассортименте вы найдете более двух десятков стандартных позиций инструментальных тележек, а также опции к ним. Наши менеджеры помогут вам с выбором и ознакомят с тонкостями.</p>
-                        </div>
-                    </div>
-                    <div class="block_48">
-                        <a class="modal_close" href="#contact">Узнать цену</a>
-                    </div>
+                <div class="block_48">
+                    <a class="modal_close" href="#contact">Узнать цену</a>
                 </div>
             </div>
         </div>
@@ -1210,49 +1172,49 @@
 
 <div class="block_33">
 	<div class="block_34">
-    	<a class="modal" href="#slide15">
+    	<a class="modal_temp" rel="modal:open" href="#slide15">
         	<div class="block_35"><img src="images/items/Tumba-TI-8M.jpg" alt="Тумба инструментальная ТИ-8М" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>ТИ-8М</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide16">
+        <a class="modal_temp" rel="modal:open" href="#slide16">
         	<div class="block_35"><img src="images/items/Tumba-TI-S2B.jpg" alt="Тумба инструментальная С2Б " /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>С2Б</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide17">
+        <a class="modal_temp" rel="modal:open" href="#slide17">
         	<div class="block_35"><img src="images/items/Tumba-TU-2M2B.jpg" alt="Тумба инструментальная ТУ-2М2Б" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>ТУ-2М2Б</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide18">
+        <a class="modal_temp" rel="modal:open" href="#slide18">
         	<div class="block_35"><img src="images/items/Tumba-TU-3MSB.jpg" alt="Тумба инструментальная 3МСБ" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>3МСБ</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide19">
+        <a class="modal_temp" rel="modal:open" href="#slide19">
         	<div class="block_35"><img src="images/items/Tumba-TU-4M2S.jpg" alt="Тумба инструментальная 4М2С" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>4М2С</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide20">
+        <a class="modal_temp" rel="modal:open" href="#slide20">
         	<div class="block_35"><img src="images/items/Tumba-TU-6MS.jpg" alt="Тумба инструментальная 6МС" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>6МС</div>
                 <div class="block_38">Подробнее</div>
             </div>
         </a>
-        <a class="modal" href="#slide21">
+        <a class="modal_temp" rel="modal:open" href="#slide21">
         	<div class="block_35"><img src="images/items/Tumba-TU-1-3MSB.jpg" alt="Тумба инструментальная ТУ-1 3МСБ" /></div>
             <div class="block_36">
             	<div class="block_37">Тумба инструментальная <br>ТУ-1 3МСБ</div>
@@ -1301,7 +1263,7 @@
 		</div>
     </div>
 </div>
-<div class="block_82" id="callback">
+<div style="display:none;" id="callback">
 <div class="block_83"><div class="block_84 modal_close"></div></div>
 <div class="block_85">
 <div class="block_58 block_86">
@@ -1356,8 +1318,17 @@
 </div>
 
 
+
+
+<!-- Link to open the modal -->
+<p><a href="#slide1" rel="modal:open">Open Modal</a></p>
+
+
+
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+
+<script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+<!--<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>-->
 <script type="text/javascript" src="js/mailValidate.js"></script>
 <script type="text/javascript" src="js/lib.js"></script>
 </body>
