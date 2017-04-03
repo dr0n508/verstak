@@ -411,9 +411,18 @@ address {
 	padding-top:10px;
 	padding-bottom:10px;
 }
-.block_29 {
+.verstak-block {
 	background:url(../images/background_7.png) left center no-repeat;
 }
+
+.shkaf-block {
+	background:url(../images/main-shkaf.png) left center no-repeat;
+}
+
+.tumba-block {
+	background:url(../images/main-tumba.png) left center no-repeat;
+}
+
 .block_30 {
 	width:238px;
 	height:auto;
@@ -604,6 +613,7 @@ address {
 	overflow:hidden;
 }
 .block_35 img {
+	width: 100% !important;
 	display:block;
 	object-fit: contain !important;
 
@@ -916,7 +926,7 @@ address {
 	margin-left:-110px;
 }
 .block_63 {
-	font-size:32px;
+	font-size:26px;
 	line-height:36px;
 	font-weight:700;
 	overflow:hidden;
@@ -1151,7 +1161,7 @@ address {
 }
 .block_85 {
 	overflow:hidden;
-	padding-right:63px;
+	/*padding-right:63px;*/
 }
 .block_86 {
 	padding-left:0px;
@@ -1200,4 +1210,36 @@ label.error {
 	right: 0px;
 	top: 0px;
 	background: url(../images/background_8.png) center no-repeat;
+}
+
+
+
+/****contacts***/
+
+
+.block_59 {
+	display: block;
+}
+
+.block_60 {
+	display: block;
+	width: 40%;
+	float: left;
+}
+
+.block_64 {
+	display: block;
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1080px) {
+	.block_60 .block_63 {
+		font-size: 22px;
+
+	}
 }
