@@ -12,3 +12,11 @@ $(function() {
 //     $('.modal_temp').leanModal({top: "20%" , closeButton: ".modal_close" });
 // });
 
+
+$('.modal_close').on('click', function() {
+    $.modal.close();
+    var link = $(this).attr('href');
+    location.href = link;
+    return false;
+});
+
