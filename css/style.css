@@ -333,9 +333,38 @@ address {
 .block_21 {
 	height:534px;
 	overflow:hidden;
+	/*background:url(../images/background_6.jpg) right top no-repeat, #f2f2f2;*/
+	position: relative;
+	background: #f2f2f2;
+	/*background-size: cover;*/
+	z-index: 5;
+}
+.block_21:after {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 23%;
 	background:url(../images/background_6.jpg) right top no-repeat, #f2f2f2;
 	background-size: cover;
+	z-index: 4;
 }
+
+@media screen and (max-width: 1366px) {
+	.block_21:after { left: 18%}
+}
+
+@media screen and (max-width: 1366px) {
+	.block_21:after { left: 18%}
+}
+
+@media screen and (max-width: 1200px) {
+	.block_21:after { left: 0%}
+}
+
+
 .block_22 {
 	max-width:1140px;
 	height:534px;
@@ -414,15 +443,21 @@ address {
 	padding-bottom:10px;
 }
 .verstak-block {
-	background:url(../images/background_7.png) left center no-repeat;
+	background:url(../images/background_7.png) 10px center no-repeat;
+	position: relative;
+	z-index: 5;
 }
 
 .shkaf-block {
-	background:url(../images/main-shkaf2.png) left center no-repeat;
+	background:url(../images/main-shkaf3.png) 10px center no-repeat;
+	position: relative;
+	z-index: 5;
 }
 
 .tumba-block {
-	background:url(../images/main-tumba2.png) left center no-repeat;
+	background:url(../images/main-tumba3.png) 10px center no-repeat;
+	position: relative;
+	z-index: 5;
 }
 
 .block_30 {
